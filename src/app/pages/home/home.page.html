@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Hola {{usuario}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="padding: 15px;">
+    <ion-list [inset]="true">
+      <ion-item [button]="true">
+        <ion-icon color="danger" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-label>Reportes</ion-label>
+      </ion-item>
+      <ion-item [button]="true">
+        <ion-icon color="tertiary" slot="start" name="list-circle" size="large" routerLink="/login"></ion-icon>
+        <ion-label routerLink="/listar">Asistencias</ion-label>
+      </ion-item>
+      <ion-item [button]="true">
+        <ion-icon color="success" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-label>Generar QR</ion-label>
+      </ion-item>
+      <ion-item [button]="true">
+        <ion-icon color="warning" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-label>Mis Clases</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
